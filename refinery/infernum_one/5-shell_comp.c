@@ -1,3 +1,4 @@
+/* compare strings with wildcards*/
 int shell_comp(char *s1, char *s2) {
   if (*s2 == '*' && *(s2 + 1) == '*') return shell_comp(s1, s2+1);
 
